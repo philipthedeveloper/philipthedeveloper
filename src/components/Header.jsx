@@ -9,7 +9,13 @@ function Header({ showModal }) {
     if (nav.current.classList.contains("show")) {
       nav.current.classList.remove("show");
       toggler.current.classList.remove("cross");
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
     } else {
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${window.scrollY}px`;
       nav.current.classList.add("show");
       toggler.current.classList.add("cross");
     }
