@@ -17,9 +17,9 @@ function MyService() {
 
     function handleInViewPort(el) {
       let elPos = el.getBoundingClientRect();
-      console.log(elPos.top, elPos.bottom);
+      // console.log(el, elPos.top, elPos.bottom);
       return (
-        (elPos.top <= 0 && elPos.bottom >= -100) ||
+        (elPos.top <= 0 && elPos.bottom >= -16500) ||
         (elPos.top >= 0 && elPos.bottom <= window.innerHeight) ||
         (elPos.bottom >= window.innerHeight &&
           elPos.top <= window.innerHeight - 60)
