@@ -13,6 +13,24 @@
 #intro_name {
   font-weight: bold;
   font-size: 4.5rem;
+  overflow: hidden;
+}
+
+#intro_name span {
+  display: block;
+  transform: translateX(-100%);
+  animation: slide-from-left 0.8s linear 0s 1 normal forwards;
+}
+
+@keyframes slide-from-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #intro_jobrole {
@@ -20,11 +38,48 @@
   font-weight: lighter;
 }
 
+#intro_jobrole span {
+  background-color: transparent;
+  display: block;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  animation: rotate-in 0.8s linear 0.8s 1 normal forwards;
+}
+
+@keyframes rotate-in {
+  0% {
+    opacity: 0;
+    transform: rotateX(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 #intro_description {
   font-size: 0.85rem;
   font-weight: lighter;
   line-height: 1.5rem;
   margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+#intro_description span {
+  display: block;
+  transform: translateY(-100%);
+  animation: slide-from-top 0.8s ease 1.6s 1 normal forwards;
+}
+
+@keyframes slide-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .connect p {
