@@ -9,14 +9,20 @@ function IntroLeft() {
         <p id="intro_greeting">
           Hello, <span>I'm</span>
         </p>
-        <h2 id="intro_name">Philip Owolabi</h2>
-        <p id="intro_jobrole">Full Stack Web Developer</p>
+        <h2 id="intro_name">
+          <span>Philip Owolabi</span>
+        </h2>
+        <p id="intro_jobrole">
+          <span>Full Stack Web Developer</span>
+        </p>
         <p id="intro_description">
-          Dependable Certified Full Stack Developer trained to develop
-          accessible user interfaces. Seeking to leverage efficient backend and
-          frontend design skills to help businesses, startups, and individuals
-          create reusable user-centered interfaces, manage, track and organize
-          development.
+          <span>
+            Dependable Certified Full Stack Developer trained to develop
+            accessible user interfaces. Seeking to leverage efficient backend
+            and frontend design skills to help businesses, startups, and
+            individuals create reusable user-centered interfaces, manage, track
+            and organize development.
+          </span>
         </p>
       </div>
       <div className="connect">
@@ -27,7 +33,7 @@ function IntroLeft() {
             target={"_blank"}
             rel={"noreferrer"}
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>
           <a
             href="https://twitter.com/OwolabiPhilip2"
