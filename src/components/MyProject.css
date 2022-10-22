@@ -96,7 +96,7 @@ p#project_description {
   flex-shrink: 0;
 }
 
-.project_card_container:hover #project_info {
+.card_cont:hover #project_info {
   display: flex;
 }
 
@@ -218,5 +218,16 @@ p#project_description {
   #recent_works {
     font-weight: bold;
     font-size: 2.3rem;
+  }
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
