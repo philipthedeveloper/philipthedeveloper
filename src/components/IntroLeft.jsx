@@ -22,18 +22,34 @@ function IntroLeft() {
       <div className="connect">
         <p>find me on</p>
         <div className="socials">
-          <Link to="">
-            <i className="fa-brands fa-facebook-f"></i>
-          </Link>
-          <Link to="">
+          <a
+            href="https://github.com/philipthedeveloper"
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://twitter.com/OwolabiPhilip2"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <i className="fa-brands fa-twitter"></i>
-          </Link>
-          <Link to="">
+          </a>
+          <a
+            href="https://www.linkedin.com/in/owolabi-philip-50223821b/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <i className="fa-brands fa-linkedin-in"></i>
-          </Link>
-          <Link to="">
+          </a>
+          <a
+            href="https://www.instagram.com/philip_coder/"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             <i className="fa-brands fa-instagram"></i>
-          </Link>
+          </a>
         </div>
       </div>
       <footer id="intro_footer">

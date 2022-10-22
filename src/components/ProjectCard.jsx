@@ -12,7 +12,7 @@ function ProjectCard({ info: { name, description, iconUrl, url, index } }) {
           <p id="project_description">{description}</p>
           <div className="project_links">
             {/* <a href="/">Explore site</a> */}
-            <a href={url} target={"_blank"}>
+            <a href={url} target={"_blank"} rel="noreferrer">
               Source Code
             </a>
           </div>
