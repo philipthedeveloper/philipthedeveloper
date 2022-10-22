@@ -2,7 +2,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
   margin-top: 2rem;
+  width: 90%;
+  max-width: 1100px;
 }
 
 #home_link {

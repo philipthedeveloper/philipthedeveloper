@@ -59,7 +59,11 @@ function MyProject() {
         </button>
       </div> */}
       <div className="all_works">
-        <a href="/" id="view_all_works">
+        <a
+          href="https://github.com/philipthedeveloper?tab=repositories"
+          id="view_all_works"
+          target={"_blank"}
+        >
           View All Works<i className="fa-solid fa-arrow-right"></i>
         </a>
       </div>

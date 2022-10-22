@@ -4,7 +4,7 @@ import styled from "styled-components";
 function ProjectCard({ info: { name, description, iconUrl, url, index } }) {
   return (
     <div className="project_card_container">
-      <ProjectCardComp>
+      <ProjectCardComp className="card_cont">
         <div className="project_thumbnail_container">
           <img src={iconUrl} alt={`${name} project`} />
         </div>

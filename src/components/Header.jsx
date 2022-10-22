@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header({ showModal }) {
   const nav = useRef(null);
   const toggler = useRef(null);
   const handleToggle = () => {
@@ -42,7 +42,9 @@ function Header() {
           </li>
         </ul>
       </nav>
-      <button id="download_cv">DOWNLOAD CV</button>
+      <button id="download_cv" onClick={showModal}>
+        DOWNLOAD CV
+      </button>
       <div
         className="toggle-nav"
         onClick={(e) => handleToggle(e)}
