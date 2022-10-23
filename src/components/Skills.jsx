@@ -5,7 +5,7 @@ import LangCard from "./LangCard";
 
 const Skills = () => {
   return (
-    <div>
+    <div id="skills">
       <div className="header">
         <p id="service">SKILLS</p>
         <p id="what_i_do">Area Of Expertise</p>
