@@ -25,3 +25,9 @@ body {
   max-width: 1100px;
   margin: auto;
 } */
+
+@media screen and (min-width: 600px) {
+  #langName {
+    font-size: 0.75rem !important;
+  }
+}
