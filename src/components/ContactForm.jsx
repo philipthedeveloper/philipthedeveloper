@@ -40,7 +40,7 @@ const ContactForm = () => {
         ></textarea>
       </div>
       <button>
-        Send Message<i class="fa-solid fa-paper-plane"></i>
+        Send Message<i className="fa-solid fa-paper-plane"></i>
       </button>
     </Form>
   );

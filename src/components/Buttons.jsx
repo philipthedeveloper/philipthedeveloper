@@ -15,7 +15,7 @@ const BackToTop = () => {
 const ContactMe = () => {
   return (
     <Contact className="contact-me" href="#contact">
-      <i class="fa-solid fa-comments"></i>
+      <i className="fa-solid fa-comments"></i>
     </Contact>
   );
 };

@@ -13,8 +13,8 @@ const Contact = () => {
       </div>
       <OverallCont>
         <ContactCardContainer className="contact-card-container">
-          {ContactData.map((item) => (
-            <ContactCard data={item} />
+          {ContactData.map((item, i) => (
+            <ContactCard data={item} key={i.toString()} />
           ))}
         </ContactCardContainer>
         <ContactForm />

@@ -20,7 +20,7 @@ const services = [
 
 const projects = [
   {
-    name: "Decktop Music Player",
+    name: "Desktop Music Player",
     description:
       "A desktop music player that shows the core functionality or control of a music player",
     iconUrl: "img/music_player.jpg",
@@ -39,7 +39,7 @@ const projects = [
   {
     name: "An E-commerce Website",
     description:
-      "A simple e-commerce Website made with react and with a payment system.",
+      "A simple e-commerce Website made with react and with also paypal payment system integration.",
     iconUrl: "img/ecommerce.jpg",
     url: "https://github.com/philipthedeveloper/stop-watch",
     test: "https://philipthedeveloper-ecommerce.netlify.app/",
