@@ -8,9 +8,14 @@ import Certification from "../components/Certification";
 import styled from "styled-components";
 import CVModal from "../components/CVModal";
 import Skills from "../components/Skills";
+import Contact from "../components/Contact";
+import { BackToTop, ContactMe } from "../components/Buttons";
+import { useEffect } from "react";
+import Footer from "../components/Footer";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(() => false);
+  const [isScrolled, setIsScrolled] = useState(() => false);
   const showModal = () => {
     setIsModalOpen(true);
     document.body.style.position = "fixed";
@@ -24,9 +29,27 @@ function Home() {
     window.scrollTo(0, parseInt(scrollY || "0") * -1);
   };
 
+  const handleScroll = () => {
+    if (document.documentElement.scrollTop > 700) {
+      setIsScrolled(true);
+      console.log("called gag");
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       {isModalOpen && <CVModal hideModal={hideModal} />}
+      {isScrolled && <BackToTop />}
+      <ContactMe />
       <Header showModal={showModal} />
       <IntroSection>
         <IntroLeft />
@@ -41,6 +64,10 @@ function Home() {
       <SkillSection>
         <Skills />
       </SkillSection>
+      <ContactSection>
+        <Contact />
+      </ContactSection>
+      <Footer />
       {/* <CertificationSection>
         <Certification />
       </CertificationSection> */}
@@ -72,6 +99,13 @@ const ProjectSection = styled.section`
   max-width: 1100px;
 `;
 const SkillSection = styled.section`
+  margin: 5rem auto;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid var(--black);
+  width: 90%;
+  max-width: 1100px;
+`;
+const ContactSection = styled.section`
   margin: 5rem auto;
   padding-bottom: 5rem;
   border-bottom: 2px solid var(--black);

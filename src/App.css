@@ -31,3 +31,12 @@ body {
     font-size: 0.75rem !important;
   }
 }
+
+@keyframes scaling {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -41,7 +41,7 @@ function Header({ showModal }) {
             <a href="#projects">PROJECTS</a>
           </li>
           <li onClick={handleToggle}>
-            <a href="#certifications">CERTIFICATIONS</a>
+            <a href="#skills">SKILLS</a>
           </li>
           <li onClick={handleToggle}>
             <Link to="#contact">CONTACT</Link>
