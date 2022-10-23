@@ -16,6 +16,8 @@ import Footer from "../components/Footer";
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(() => false);
   const [isScrolled, setIsScrolled] = useState(() => false);
+  const [isButtonShow, setIsShowButton] = useState(() => true);
+
   const showModal = () => {
     setIsModalOpen(true);
     document.body.style.position = "fixed";
@@ -32,7 +34,6 @@ function Home() {
   const handleScroll = () => {
     if (document.documentElement.scrollTop > 700) {
       setIsScrolled(true);
-      console.log("called gag");
     } else {
       setIsScrolled(false);
     }
@@ -40,7 +41,9 @@ function Home() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    console.log("called here.");
     return () => {
+      console.log("Clean up called");
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -49,8 +52,8 @@ function Home() {
     <>
       {isModalOpen && <CVModal hideModal={hideModal} />}
       {isScrolled && <BackToTop />}
-      <ContactMe />
-      <Header showModal={showModal} />
+      {isButtonShow && <ContactMe />}
+      <Header showModal={showModal} toggleButton={setIsShowButton} />
       <IntroSection>
         <IntroLeft />
         <IntroRight />

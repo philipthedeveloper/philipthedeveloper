@@ -2,13 +2,14 @@ import React, { useRef } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
-function Header({ showModal }) {
+function Header({ showModal, toggleButton }) {
   const nav = useRef(null);
   const toggler = useRef(null);
   const handleToggle = () => {
     if (nav.current.classList.contains("show")) {
       nav.current.classList.remove("show");
       toggler.current.classList.remove("cross");
+      toggleButton(true);
       const scrollY = document.body.style.top;
       document.body.style.position = "";
       document.body.style.top = "";
@@ -16,6 +17,7 @@ function Header({ showModal }) {
     } else {
       document.body.style.position = "fixed";
       document.body.style.top = `-${window.scrollY}px`;
+      toggleButton(false);
       nav.current.classList.add("show");
       toggler.current.classList.add("cross");
     }
@@ -44,7 +46,7 @@ function Header({ showModal }) {
             <a href="#skills">SKILLS</a>
           </li>
           <li onClick={handleToggle}>
-            <Link to="#contact">CONTACT</Link>
+            <a href="#contact">CONTACT</a>
           </li>
         </ul>
       </nav>
