@@ -23,41 +23,48 @@ const projects = [
     name: "Decktop Music Player",
     description:
       "A desktop music player that shows the core functionality or control of a music player",
-    iconUrl: "img/back1.jpg",
+    iconUrl: "img/music_player.jpg",
+    url: "https://github.com/philipthedeveloper/desktop-music-player",
+    test: "https://philipthedeveloper.github.io/desktop-music-player/",
   },
   {
     name: "Birthday Calculator",
     description:
       "This web appplication calculates the period of time left to your next birthday.",
-    iconUrl: "img/back2.jpg",
+    iconUrl: "img/birthday-calculator.jpg",
     url: "https://github.com/philipthedeveloper/birthday-calculator",
+    test: "https://philipthedeveloper.github.io/birthday-calculator/",
+  },
+
+  {
+    name: "An E-commerce Website",
+    description:
+      "A simple e-commerce Website made with react and with a payment system.",
+    iconUrl: "img/ecommerce.jpg",
+    url: "https://github.com/philipthedeveloper/stop-watch",
+    test: "https://philipthedeveloper-ecommerce.netlify.app/",
   },
   {
     name: "A Stop Watch",
     description:
       "This Web Application can serves as a timer for you when you are carrying out a particular task.",
-    iconUrl: "img/back3.jpg",
+    iconUrl: "img/stop-watch.jpg",
     url: "https://github.com/philipthedeveloper/stop-watch",
-  },
-  {
-    name: "An E-commerce Website",
-    description:
-      "A simple e-commerce Website made with react and with a payment system.",
-    iconUrl: "img/back4.jpg",
-    url: "https://github.com/philipthedeveloper/stop-watch",
+    test: "https://philipthedeveloper.github.io/stop-watch/",
   },
   {
     name: "A Task Manager CRUD App",
     description: "This App helps a user to manager their task.",
-    iconUrl: "img/back5.jpg",
+    iconUrl: "img/task-manager.jpg",
     url: "https://github.com/philipthedeveloper/task-manager",
+    test: "https://philipthedeveloper-taskmanager.netlify.app/",
   },
   {
-    name: "Comment System.",
-    description:
-      "An app depicting how the comment system, in social media apps and other platform works.",
-    iconUrl: "img/back5.jpg",
-    url: "https://github.com/philipthedeveloper/comment-system",
+    name: "Basic Portfolio Website",
+    description: "An simple portfolio website made with react.",
+    iconUrl: "img/basic-portfolio.jpg",
+    url: "https://github.com/philipthedeveloper/basic-portfolio-page",
+    test: "https://philipthedeveloper-basic-portfolio.netlify.app/",
   },
 ];
 

@@ -7,6 +7,7 @@ import MyProject from "../components/MyProject";
 import Certification from "../components/Certification";
 import styled from "styled-components";
 import CVModal from "../components/CVModal";
+import Skills from "../components/Skills";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(() => false);
@@ -37,6 +38,9 @@ function Home() {
       <ProjectSection>
         <MyProject />
       </ProjectSection>
+      <SkillSection>
+        <Skills />
+      </SkillSection>
       {/* <CertificationSection>
         <Certification />
       </CertificationSection> */}
@@ -61,6 +65,13 @@ const ServiceSection = styled.section`
   max-width: 1100px;
 `;
 const ProjectSection = styled.section`
+  margin: 5rem auto;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid var(--black);
+  width: 90%;
+  max-width: 1100px;
+`;
+const SkillSection = styled.section`
   margin: 5rem auto;
   padding-bottom: 5rem;
   border-bottom: 2px solid var(--black);
