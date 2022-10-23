@@ -1,6 +1,5 @@
 import React from "react";
 import "./IntroLeft.css";
-import { Link } from "react-router-dom";
 
 function IntroLeft() {
   return (

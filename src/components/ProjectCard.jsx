@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-function ProjectCard({ info: { name, description, iconUrl, url, index } }) {
+function ProjectCard({
+  info: { name, description, iconUrl, url, test, index },
+}) {
   return (
     <div className="project_card_container">
       <ProjectCardComp className="card_cont">
@@ -10,7 +12,20 @@ function ProjectCard({ info: { name, description, iconUrl, url, index } }) {
         </div>
         <div id="project_info">
           <p id="project_description">{description}</p>
+          <a
+            href={iconUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="view_snapshot"
+          >
+            <i className="fa-solid fa-image"></i>
+          </a>
           <div className="project_links">
+            {test && (
+              <a href={test} target="_blank" rel="noreferrer">
+                <i className="fa-solid fa-play"></i>
+              </a>
+            )}
             {/* <a href="/">Explore site</a> */}
             <a href={url} target={"_blank"} rel="noreferrer">
               Source Code

@@ -63,6 +63,7 @@ function MyProject() {
           href="https://github.com/philipthedeveloper?tab=repositories"
           id="view_all_works"
           target={"_blank"}
+          rel="noreferrer"
         >
           View All Works<i className="fa-solid fa-arrow-right"></i>
         </a>
