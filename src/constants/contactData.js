@@ -5,11 +5,11 @@ const ContactData = [
   },
   {
     logo: `fa-solid fa-phone`,
-    info: "+1(234)275-8611",
+    info: "+2349072060752",
   },
   {
     logo: "fa-solid fa-envelope",
-    info: "philipowolabi507@gmail.com",
+    info: "philipowolabi79@gmail.com",
   },
   {
     logo: "fa-solid fa-circle-check",
