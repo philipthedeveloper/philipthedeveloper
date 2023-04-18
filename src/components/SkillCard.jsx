@@ -23,7 +23,7 @@ const SkillCard = ({ data: { type, list } }) => {
             <Circle width={10} />
             <p
               style={{
-                marginLeft: "10px",
+                marginLeft: "0.4rem",
                 fontSize: "0.75rem",
                 fontWeight: 300,
               }}
@@ -55,6 +55,7 @@ const SkillHeader = styled.header`
   justify-content: flex-start;
   align-items: center;
   margin-top: 0;
+  width: 100%;
 `;
 const IllustrationCont = styled.div`
   display: flex;
@@ -103,7 +104,21 @@ const Heading = styled.h3`
 
 const SkillBody = styled.div`
   padding: 1rem;
-  margin-left: 1.5rem;
-  border-left: 2px solid var(--base-color);
+  padding-top: 0;
+  margin-left: calc(25px / 2);
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: var(--base-color);
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: -5px;
+    border-radius: 10px;
+  }
 `;
 export default SkillCard;
