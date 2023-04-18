@@ -12,19 +12,33 @@ const CVModal = ({ hideModal }) => {
     <CVModalContainer onClick={(e) => handleHide(e)}>
       <ModalBox>
         <a
-          href="docs/RESUME.pdf"
+          href="docs/DEVELOPER_RESUME.pdf"
           download={"philipthedeveloper"}
           style={{ ...styles.a, backgroundColor: "var(--base-color)" }}
         >
-          pdf format
+          web development pdf format
+        </a>
+        <a
+          href="docs/MOBILE_APP_RESUME.pdf"
+          download={"philipthedeveloper"}
+          style={{ ...styles.a, backgroundColor: "var(--base-color)" }}
+        >
+          mobile app pdf format
         </a>
 
         <a
-          href="docs/RESUME.docx"
+          href="docs/DEVELOPER_RESUME.docx"
           download={"philipthedeveloper"}
           style={{ ...styles.a, backgroundColor: "blue" }}
         >
-          word format
+          web developer word format
+        </a>
+        <a
+          href="docs/MOBILE_APP_RESUME.docx"
+          download={"philipthedeveloper"}
+          style={{ ...styles.a, backgroundColor: "blue" }}
+        >
+          mobile app word format
         </a>
       </ModalBox>
     </CVModalContainer>
