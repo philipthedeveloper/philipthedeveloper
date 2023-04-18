@@ -86,7 +86,7 @@ const Pointer = styled.span`
 //   height: 100%;
 // `;
 const Heading = styled.h3`
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.2rem;
   white-space: nowrap;
   margin-left: 0.4rem;
