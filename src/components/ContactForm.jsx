@@ -90,7 +90,6 @@ const ContactForm = ({ showProcessModal, hideProcess }) => {
     };
 
     showProcessModal();
-    return;
     let response = await fetch(
       "https://philipthdeveloper-backend.onrender.com",
       options
