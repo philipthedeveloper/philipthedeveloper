@@ -2,13 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const ProcessingModal = ({ hideModal }) => {
-  const handleHide = (e) => {
-    if (e.target === e.currentTarget) {
-      hideModal();
-    }
-  };
+  //   const handleHide = (e) => {
+  //     if (e.target === e.currentTarget) {
+  //       hideModal();
+  //     }
+  //   };
   return (
-    <ModalContainer onClick={(e) => handleHide(e)}>
+    <ModalContainer>
       <div className="spinner-3"></div>
       <div className="classic-4"></div>
     </ModalContainer>
