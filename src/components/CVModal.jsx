@@ -58,6 +58,7 @@ const CVModalContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  oveflow: hidden;
 `;
 
 const ModalBox = styled.div`

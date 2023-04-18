@@ -4,7 +4,7 @@ import ContactData from "../constants/contactData";
 import ContactCard from "./ContactCard";
 import ContactForm from "./ContactForm";
 
-const Contact = () => {
+const Contact = ({ showProcessModal, hideProcess }) => {
   return (
     <div id="contact">
       <div className="header">
@@ -17,7 +17,10 @@ const Contact = () => {
             <ContactCard data={item} key={i.toString()} />
           ))}
         </ContactCardContainer>
-        <ContactForm />
+        <ContactForm
+          showProcessModal={showProcessModal}
+          hideProcess={hideProcess}
+        />
       </OverallCont>
     </div>
   );

@@ -7,32 +7,55 @@ import MyProject from "../components/MyProject";
 import Certification from "../components/Certification";
 import styled from "styled-components";
 import CVModal from "../components/CVModal";
+import ProcessingModal from "../components/ProcessModal";
 import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import { BackToTop, ContactMe } from "../components/Buttons";
 import { useEffect } from "react";
 import Footer from "../components/Footer";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(() => false);
+  const [isProcess, setIsProcess] = useState(() => false);
   const [isScrolled, setIsScrolled] = useState(() => false);
   const [isButtonShow, setIsShowButton] = useState(() => true);
 
   const showModal = () => {
     setIsModalOpen(true);
+    afterEffect();
+  };
+
+  const showProcessModal = () => {
+    setIsProcess(true);
+    document.body.style.overflowY = "hidden";
+  };
+
+  const afterEffect = () => {
+    let scrollY = window.scrollY;
     document.body.style.position = "fixed";
-    document.body.style.top = `-${window.scrollY}px`;
-    document.body.style.left = 0
-    document.body.style.right = 0
-    document.body.style.overflowY = "scroll"
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = 0;
+    document.body.style.right = 0;
+    document.body.style.overflowY = "scroll";
   };
   const hideModal = () => {
     setIsModalOpen(false);
+    reverseAfterEffect();
+  };
+
+  const hideProcess = () => {
+    setIsProcess(false);
+    reverseAfterEffect();
+  };
+
+  const reverseAfterEffect = () => {
     const scrollY = document.body.style.top;
     document.body.style.position = "";
     document.body.style.top = "";
-    window.scrollTo(0, parseInt(scrollY || "0") * -1);
-    document.body.style.overflow = "auto"
+    window.scrollBy(0, parseInt(scrollY || "0") * -1);
+    document.body.style.overflow = "auto";
   };
 
   const handleScroll = () => {
@@ -55,8 +78,21 @@ function Home() {
   return (
     <>
       {isModalOpen && <CVModal hideModal={hideModal} />}
+      {isProcess && <ProcessingModal hideModal={hideProcess} />}
       {isScrolled && <BackToTop />}
       {isButtonShow && <ContactMe />}
+      <ToastContainer
+        position="top-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Header showModal={showModal} toggleButton={setIsShowButton} />
       <IntroSection>
         <IntroLeft />
@@ -72,7 +108,10 @@ function Home() {
         <Skills />
       </SkillSection>
       <ContactSection>
-        <Contact />
+        <Contact
+          showProcessModal={showProcessModal}
+          hideProcess={hideProcess}
+        />
       </ContactSection>
       <Footer />
       {/* <CertificationSection>

@@ -36,7 +36,7 @@ const Skills = () => {
             list: ["Node JS", "Express JS", "MongoDB", "Firebase"],
           },
         ].map((item, index) => (
-          <SkillCard data={item} key={index} />
+          <SkillCard data={item} key={item.type} />
         ))}
       </SkillContainer>
     </div>
