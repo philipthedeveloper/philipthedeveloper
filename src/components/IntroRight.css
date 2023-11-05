@@ -32,8 +32,13 @@
 
 @media screen and (max-width: 778px) {
   .right_intro_container {
-    flex-basis: 80%;
+    /* flex-basis: 80%; */
+    flex-basis: 90%;
     margin: auto;
+  }
+
+  .right_intro_container img {
+    width: 105%;
   }
 
   .background {
@@ -48,6 +53,11 @@
     height: 450px;
   }
   .right_intro_container img {
+    width: 110%;
     height: 400px;
+  }
+
+  .background {
+    width: 90%;
   }
 }

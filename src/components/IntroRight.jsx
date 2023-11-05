@@ -5,7 +5,7 @@ function MainRight() {
   return (
     <div className="right_intro_container">
       <div className="background">
-        <img src="img/philip.png" alt="" />
+        <img src="img/philip-profile-image-new.png" alt="" />
       </div>
     </div>
   );
