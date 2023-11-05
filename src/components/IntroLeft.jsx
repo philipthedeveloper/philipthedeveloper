@@ -12,15 +12,24 @@ function IntroLeft() {
           <span>Philip Owolabi</span>
         </h2>
         <p id="intro_jobrole">
-          <span>Full Stack Web Developer</span>
+          {/* <span>Full Stack Web Developer</span> */}
+          <span>Frontend Developer</span>
         </p>
         <p id="intro_description">
-          <span>
+          {/* <span>
             Dependable Certified Full Stack Developer trained to develop
             accessible user interfaces. Seeking to leverage efficient backend
             and frontend design skills to help businesses, startups, and
             individuals create reusable user-centered interfaces, manage, track
             and organize development.
+          </span> */}
+          <span>
+            With almost half a decade of experience in frontend development, I
+            have built a strong foundation in core web technologies. I am
+            proficient in HTML, CSS, and JavaScript, and have expertise in
+            modern frontend frameworks such as React and Angular.
+            {/* ..{" "} */}
+            {/* <button>read more</button> */}
           </span>
         </p>
       </div>
