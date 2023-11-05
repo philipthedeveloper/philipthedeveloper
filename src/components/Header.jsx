@@ -23,6 +23,13 @@ function Header({ showModal, toggleButton }) {
     }
   };
 
+  const handleNavLink = () => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth <= 992) {
+      handleToggle();
+    }
+  };
+
   return (
     <header>
       <div className="logo_container">
@@ -33,19 +40,19 @@ function Header({ showModal, toggleButton }) {
       </div>
       <nav ref={nav}>
         <ul>
-          <li onClick={handleToggle}>
+          <li onClick={handleNavLink}>
             <Link to="/">HOME</Link>
           </li>
-          <li onClick={handleToggle}>
+          <li onClick={handleNavLink}>
             <a href="#services">SERVICES</a>
           </li>
-          <li onClick={handleToggle}>
+          <li onClick={handleNavLink}>
             <a href="#projects">PROJECTS</a>
           </li>
-          <li onClick={handleToggle}>
+          <li onClick={handleNavLink}>
             <a href="#skills">SKILLS</a>
           </li>
-          <li onClick={handleToggle}>
+          <li onClick={handleNavLink}>
             <a href="#contact">CONTACT</a>
           </li>
         </ul>
