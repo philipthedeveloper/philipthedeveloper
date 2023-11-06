@@ -44,7 +44,8 @@ function Header({ showModal, toggleButton }) {
             <Link to="/">HOME</Link>
           </li>
           <li onClick={handleNavLink}>
-            <a href="#services">SERVICES</a>
+            {/* <a href="#services">SERVICES</a> */}
+            <a href="#journey">MY JOURNEY</a>
           </li>
           <li onClick={handleNavLink}>
             <a href="#projects">PROJECTS</a>
@@ -54,6 +55,9 @@ function Header({ showModal, toggleButton }) {
           </li>
           <li onClick={handleNavLink}>
             <a href="#contact">CONTACT</a>
+          </li>
+          <li onClick={handleNavLink}>
+            <a href="#certification">CERTIFICATION</a>
           </li>
         </ul>
       </nav>
