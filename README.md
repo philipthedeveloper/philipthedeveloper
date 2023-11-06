@@ -8,7 +8,9 @@
 
 <p style="font-weight: 300">My work primarily revolves around creating responsive and user-friendly interfaces, optimizing web performance, and ensuring cross-browser compatibility.</p>
 
-<h2 style="font-style: italic; font-weight: bolder">Technical Skills</h2>
+<!-- <h2 style="font-style: italic; font-weight: bolder">Technical Skills</h2> -->
+
+## _*Technical Skills*_
 
 <ul style="margin: 0">
     <div style="display: flex; justify-content: space-evenly; max-width: 400px; width: 90%; margin: auto">
@@ -29,7 +31,9 @@
     </div>
 </ul>
 
-<h2 style="font-style: italic; font-weight: bolder">Competencies</h2>
+<!-- <h2 style="font-style: italic; font-weight: bolder">Competencies</h2> -->
+
+## _*Competencies*_
 
 <ul style="margin: 0">
     <div style="display: flex; justify-content: space-evenly; max-width: 400px; width: 90%; margin: auto">
@@ -47,7 +51,9 @@
     
 </ul>
 
-## Available For
+## _*Available For*_
+
+<!-- <h2 style="font-style: italic; font-weight: bolder">Available</h2> -->
 
 <!-- - Freelance Jobs
 - FrontEnd Position
@@ -58,6 +64,10 @@
 - Open Source Projects
 - Web Dev Position
 - Freelance Jobs
+<br/>
+<p>Find out more about me and my works. Visit:  <a href="https://philipthedeveloper.netlify.app" target="_blank">My Portfolio</a></p>
+
+<!--
 
 ## Language of Expertise
 
@@ -79,4 +89,4 @@
 - MongoDB
 - Python
 - Kotlin
-- Data Structure and Algorithm
+- Data Structure and Algorithm -->
