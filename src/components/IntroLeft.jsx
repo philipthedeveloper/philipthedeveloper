@@ -6,14 +6,19 @@ function IntroLeft() {
     <div className="left_intro_container">
       <div className="intro">
         <p id="intro_greeting">
-          Hello, <span>I'm</span>
+          Hello,
+          {/* <span>Hello,</span> */}
+          {/* <span>Welcome,</span> */}
+          <span> I'm</span>
         </p>
         <h2 id="intro_name">
           <span>Philip Owolabi</span>
+          {/* <span>I'm an innovative</span>
+          <span> Frontend Developer</span> */}
         </h2>
         <p id="intro_jobrole">
           {/* <span>Full Stack Web Developer</span> */}
-          <span>Frontend Developer</span>
+          <span>An innovative Frontend Developer</span>
         </p>
         <p id="intro_description">
           {/* <span>
@@ -24,12 +29,8 @@ function IntroLeft() {
             and organize development.
           </span> */}
           <span>
-            With almost half a decade of experience in frontend development, I
-            have built a strong foundation in core web technologies. I am
-            proficient in HTML, CSS, and JavaScript, and have expertise in
-            modern frontend frameworks such as React and Angular.
-            {/* ..{" "} */}
-            {/* <button>read more</button> */}
+            With almost half a decade of experience in frontend development and
+            expertise in modern frontend frameworks such as React and Angular.
           </span>
         </p>
       </div>
@@ -68,12 +69,16 @@ function IntroLeft() {
       </div>
       <footer id="intro_footer">
         <div id="experience">
-          <p className="number">2+</p>
+          <p className="number">3+</p>
           <p className="text">years of experience</p>
         </div>
+        {/* <div id="clients">
+          <p className="number">3</p>
+          <p className="text">Startups</p>
+        </div> */}
         <div id="clients">
-          <p className="number">5+</p>
-          <p className="text">working client</p>
+          <p className="number">50+</p>
+          <p className="text">Projects Completed</p>
         </div>
       </footer>
     </div>
