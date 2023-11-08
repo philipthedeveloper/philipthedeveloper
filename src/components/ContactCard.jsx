@@ -34,8 +34,10 @@ const CardComp = styled.div`
   border-radius: 0.5rem;
   cursor: pointer;
   opacity: 0;
-  transform: scale(0.7);
-  transition: transform 1s, opacity 1s ease;
+  // transform: scale(0.7);
+  transform: scale(0.9);
+  // transition: transform 1s, opacity 1s ease;
+  transition: transform 0.4s, opacity 0.7s ease;
   min-width: 250px;
   text-align: center;
   flex-grow: 1;

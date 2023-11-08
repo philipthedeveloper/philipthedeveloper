@@ -98,8 +98,10 @@ p#project_description {
 
 .project_card_container {
   opacity: 0;
-  transform: translateX(0) scale(0.7);
-  transition: transform 1s, opacity 1s ease;
+  /* transform: translateX(0) scale(0.7); */
+  transform: translateX(0) scale(0.9);
+  /* transition: transform 1s, opacity 1s ease; */
+  transition: transform 0.4s, opacity 0.7s ease;
   /* max-width: 350px; */
   min-width: 300px;
   margin: auto;
