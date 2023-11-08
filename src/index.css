@@ -18,7 +18,6 @@
   }
 }
 
-.opacityToggler.card,
 .opacityToggler.story-card {
   opacity: 1 !important;
   transform: scale(1) !important;

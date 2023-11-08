@@ -1,27 +1,21 @@
 import React, { useEffect } from "react";
 import myStory from "../constants/my-story-data";
 import StoryCard from "./StoryCard";
+import { checkInViewPort } from "../utils/index.util";
+
+const handleWindowScroll = () => {
+  const allCards = document.querySelectorAll(".story-card");
+  allCards.forEach((image) => {
+    let inViewPort = checkInViewPort(image);
+    inViewPort ? image.classList.add("opacityToggler") : void 0;
+  });
+};
 
 const MyJourney = () => {
   useEffect(() => {
-    const storyContainer = document.querySelectorAll(".story-card");
-    window.addEventListener("scroll", (e) => {
-      storyContainer.forEach((image) => {
-        let inViewPort = handleInViewPort(image);
-        inViewPort ? image.classList.add("opacityToggler") : void 0;
-      });
-    });
+    window.addEventListener("scroll", handleWindowScroll);
 
-    function handleInViewPort(el) {
-      let elPos = el.getBoundingClientRect();
-      // console.log(el, elPos.top, elPos.bottom);
-      return (
-        (elPos.top <= 0 && elPos.bottom >= -16500) ||
-        (elPos.top >= 0 && elPos.bottom <= window.innerHeight) ||
-        (elPos.bottom >= window.innerHeight &&
-          elPos.top <= window.innerHeight - 60)
-      );
-    }
+    return () => window.removeEventListener("scroll", handleWindowScroll);
   }, []);
   return (
     <div className="w-full" id="journey">
