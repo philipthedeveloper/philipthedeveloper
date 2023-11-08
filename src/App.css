@@ -7,6 +7,7 @@
 :root {
   --main-background: #24282c;
   --base-color: #f8043d;
+  --base-color-dimmed: rgb(246 4 60 / 30%);
   --white: #e8f0e8;
   --shadow: #181d28;
   --black: #181a25;
@@ -78,5 +79,4 @@ body {
   to {
     clip-path: inset(0 -1ch 0 0);
   }
-} 
-
+}

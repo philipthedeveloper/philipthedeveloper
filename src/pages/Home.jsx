@@ -15,6 +15,8 @@ import { useEffect } from "react";
 import Footer from "../components/Footer";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import MyJourney from "../components/MyJourney";
+import Experience from "../components/experience/Experience";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(() => false);
@@ -98,21 +100,27 @@ function Home() {
         <IntroLeft />
         <IntroRight />
       </IntroSection>
-      <ServiceSection>
+      {/* <Section>
+        <MyJourney />
+      </Section> */}
+      <Section>
+        <Experience />
+      </Section>
+      {/* <Section>
         <MyService />
-      </ServiceSection>
-      <ProjectSection>
+      </Section> */}
+      <Section>
         <MyProject />
-      </ProjectSection>
-      <SkillSection>
+      </Section>
+      <Section>
         <Skills />
-      </SkillSection>
-      <ContactSection>
+      </Section>
+      <Section>
         <Contact
           showProcessModal={showProcessModal}
           hideProcess={hideProcess}
         />
-      </ContactSection>
+      </Section>
       <Footer />
       {/* <CertificationSection>
         <Certification />
@@ -121,49 +129,52 @@ function Home() {
   );
 }
 
-const IntroSection = styled.section`
+const Section = styled.section`
+  margin: 5rem auto;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid var(--black);
+  width: 90%;
+  max-width: 1100px;
+`;
+
+const IntroSection = styled(Section)`
   display: flex;
-  margin: 5rem auto;
-  padding-bottom: 5rem;
-  border-bottom: 2px solid var(--black);
   flex-wrap: wrap;
-  width: 90%;
-  max-width: 1100px;
 `;
-const ServiceSection = styled.section`
-  margin: 5rem auto;
-  padding-bottom: 5rem;
-  border-bottom: 2px solid var(--black);
-  width: 90%;
-  max-width: 1100px;
-`;
-const ProjectSection = styled.section`
-  margin: 5rem auto;
-  padding-bottom: 5rem;
-  border-bottom: 2px solid var(--black);
-  width: 90%;
-  max-width: 1100px;
-`;
-const SkillSection = styled.section`
-  margin: 5rem auto;
-  padding-bottom: 5rem;
-  border-bottom: 2px solid var(--black);
-  width: 90%;
-  max-width: 1100px;
-`;
-const ContactSection = styled.section`
-  margin: 5rem auto;
-  padding-bottom: 5rem;
-  border-bottom: 2px solid var(--black);
-  width: 90%;
-  max-width: 1100px;
-`;
-const CertificationSection = styled.section`
-  margin: 5rem auto;
-  padding-bottom: 5rem;
-  border-bottom: 2px solid var(--black);
-  width: 90%;
-  max-width: 1100px;
-`;
+// const ServiceSection = styled.section`
+//   margin: 5rem auto;
+//   padding-bottom: 5rem;
+//   border-bottom: 2px solid var(--black);
+//   width: 90%;
+//   max-width: 1100px;
+// `;
+// const ProjectSection = styled.section`
+//   margin: 5rem auto;
+//   padding-bottom: 5rem;
+//   border-bottom: 2px solid var(--black);
+//   width: 90%;
+//   max-width: 1100px;
+// `;
+// const SkillSection = styled.section`
+//   margin: 5rem auto;
+//   padding-bottom: 5rem;
+//   border-bottom: 2px solid var(--black);
+//   width: 90%;
+//   max-width: 1100px;
+// `;
+// const ContactSection = styled.section`
+//   margin: 5rem auto;
+//   padding-bottom: 5rem;
+//   border-bottom: 2px solid var(--black);
+//   width: 90%;
+//   max-width: 1100px;
+// `;
+// const CertificationSection = styled.section`
+//   margin: 5rem auto;
+//   padding-bottom: 5rem;
+//   border-bottom: 2px solid var(--black);
+//   width: 90%;
+//   max-width: 1100px;
+// `;
 
 export default Home;

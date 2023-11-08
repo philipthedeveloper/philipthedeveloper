@@ -62,7 +62,7 @@ function Header({ showModal, toggleButton }) {
         </ul>
       </nav>
       <button id="download_cv" onClick={showModal}>
-        DOWNLOAD CV
+        DOWNLOAD MY CV
       </button>
       <div
         className="toggle-nav"
