@@ -59,7 +59,7 @@ function IntroLeft() {
             <i className="fa-brands fa-linkedin-in"></i>
           </a>
           <a
-            href="https://www.instagram.com/philip_coder/"
+            href="https://instagram.com/philipthedeveloper?igshid=anh1MGp6emNvZ3Zo"
             target={"_blank"}
             rel="noreferrer"
           >
