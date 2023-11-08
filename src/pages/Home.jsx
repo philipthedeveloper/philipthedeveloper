@@ -100,9 +100,9 @@ function Home() {
         <IntroLeft />
         <IntroRight />
       </IntroSection>
-      {/* <Section>
+      <Section>
         <MyJourney />
-      </Section> */}
+      </Section>
       <Section>
         <Experience />
       </Section>

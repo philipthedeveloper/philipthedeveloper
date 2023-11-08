@@ -25,7 +25,7 @@ const MyJourney = () => {
           My Journey
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-20 gap-y-24 my-16 lg:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-2 gap-20 gap-y-4 sm:gap-y-8 md:gap-y-12 lg:gap-y-24 my-8 md:my-16 lg:grid-cols-2 md:grid-cols-3">
         {myStory.map((story, i) => {
           if (i % 2 === 0) {
             return (

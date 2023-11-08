@@ -48,6 +48,9 @@ function Header({ showModal, toggleButton }) {
             <a href="#journey">MY JOURNEY</a>
           </li>
           <li onClick={handleNavLink}>
+            <a href="#work-experience">EXPERIENCE</a>
+          </li>
+          <li onClick={handleNavLink}>
             <a href="#projects">PROJECTS</a>
           </li>
           <li onClick={handleNavLink}>
@@ -56,9 +59,9 @@ function Header({ showModal, toggleButton }) {
           <li onClick={handleNavLink}>
             <a href="#contact">CONTACT</a>
           </li>
-          <li onClick={handleNavLink}>
+          {/* <li onClick={handleNavLink}>
             <a href="#certification">CERTIFICATION</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <button id="download_cv" onClick={showModal}>
