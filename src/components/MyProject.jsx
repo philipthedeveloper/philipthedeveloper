@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import "./MyProject.css";
 import { projects } from "../data";
+import { checkInViewPort } from "../utils/index.util";
 
 function MyProject() {
   useEffect(() => {
@@ -10,22 +11,11 @@ function MyProject() {
     );
     window.addEventListener("scroll", (e) => {
       serviceContainer.forEach((image) => {
-        let inViewPort = handleInViewPort(image);
-        inViewPort
-          ? image.classList.add("opacityToggler")
-          : image.classList.remove("opacityToggler");
+        let inViewPort = checkInViewPort(image);
+        inViewPort ? image.classList.add("opacityToggler") : void 0;
+        // : image.classList.remove("opacityToggler");
       });
     });
-
-    function handleInViewPort(el) {
-      let elPos = el.getBoundingClientRect();
-      return (
-        (elPos.top <= 0 && elPos.bottom >= -16500) ||
-        (elPos.top >= 0 && elPos.bottom <= window.innerHeight) ||
-        (elPos.bottom >= window.innerHeight &&
-          elPos.top <= window.innerHeight - 60)
-      );
-    }
   }, []);
 
   return (

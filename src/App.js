@@ -8,9 +8,8 @@ const handleWindowScroll = () => {
   const allCards = document.querySelectorAll(".card");
   allCards.forEach((image) => {
     let inViewPort = checkInViewPort(image);
-    inViewPort
-      ? image.classList.add("opacityToggler")
-      : image.classList.remove("opacityToggler");
+    inViewPort ? image.classList.add("opacityToggler") : void 0;
+    // : image.classList.remove("opacityToggler");
   });
 };
 
