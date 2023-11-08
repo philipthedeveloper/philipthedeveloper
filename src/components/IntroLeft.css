@@ -20,7 +20,8 @@
 #intro_name span {
   display: block;
   transform: translateX(-100%);
-  animation: slide-from-left 0.8s linear 0s 1 normal forwards;
+  /* animation: slide-from-left 0.8s linear 0s 1 normal forwards; */
+  animation: slide-from-left 0.3s linear 0s 1 normal forwards;
 }
 
 @keyframes slide-from-left {
@@ -44,7 +45,8 @@
   display: block;
   backface-visibility: hidden;
   transform: rotateX(180deg);
-  animation: rotate-in 0.8s linear 0.8s 1 normal forwards;
+  /* animation: rotate-in 0.8s linear 0.8s 1 normal forwards; */
+  animation: rotate-in 0.3s linear 0.3s 1 normal forwards;
 }
 
 @keyframes rotate-in {
@@ -69,7 +71,8 @@
 #intro_description span {
   display: block;
   transform: translateY(-100%);
-  animation: slide-from-top 0.8s ease 1.6s 1 normal forwards;
+  /* animation: slide-from-top 0.8s ease 1.6s 1 normal forwards; */
+  animation: slide-from-top 0.4s ease 0.6s 1 normal forwards;
 }
 
 @keyframes slide-from-top {
