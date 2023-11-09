@@ -112,9 +112,9 @@ function Home() {
       <Section>
         <MyProject />
       </Section>
-      <Section>
+      {/* <Section>
         <Skills />
-      </Section>
+      </Section> */}
       <Section>
         <Contact
           showProcessModal={showProcessModal}
