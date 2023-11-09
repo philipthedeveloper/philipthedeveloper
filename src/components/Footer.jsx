@@ -43,6 +43,9 @@ const Footer = () => {
         </div>
       </div>
 
+      <p style={{ fontSize: "0.7rem", margin: "1rem 0" }}>
+        Designed and build by Philip Owolabi
+      </p>
       <p style={{ fontSize: "0.65rem", margin: "1rem 0" }}>
         UI Credit:{" "}
         <a
