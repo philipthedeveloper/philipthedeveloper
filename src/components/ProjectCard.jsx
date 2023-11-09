@@ -45,7 +45,7 @@ const ProjectCardComp = styled.div`
   border-radius: 0.5rem;
   cursor: pointer;
   // opacity: 1;
-  transform: scale(0.7);
+  // transform: scale(0.7);
   transition: transform 1s, opacity 1s ease;
   // overflow: hidden;
   position: relative;

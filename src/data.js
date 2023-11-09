@@ -23,48 +23,58 @@ const projects = [
     name: "Desktop Music Player",
     description:
       "A desktop music player that shows the core functionality or control of a music player",
-    iconUrl: "img/music_player.jpg",
-    url: "https://github.com/philipthedeveloper/desktop-music-player",
-    test: "https://philipthedeveloper.github.io/desktop-music-player/",
+    imageUrl: "img/music_player.jpg",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/desktop-music-player",
+    liveDemoUrl: "https://philipthedeveloper.github.io/desktop-music-player/",
+    stackUsed: ["VS Code", "JavaScript", "Firebase"],
   },
   {
     name: "Birthday Calculator",
     description:
       "This web appplication calculates the period of time left to your next birthday.",
-    iconUrl: "img/birthday-calculator.jpg",
-    url: "https://github.com/philipthedeveloper/birthday-calculator",
-    test: "https://philipthedeveloper.github.io/birthday-calculator/",
+    imageUrl: "img/birthday-calculator.jpg",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/birthday-calculator",
+    liveDemoUrl: "https://philipthedeveloper.github.io/birthday-calculator/",
+    stackUsed: ["VS Code", "JavaScript"],
   },
 
   {
     name: "An E-commerce Website",
     description:
       "A simple e-commerce Website made with react and with also paypal payment system integration.",
-    iconUrl: "img/ecommerce.jpg",
-    url: "https://github.com/philipthedeveloper/stop-watch",
-    test: "https://philipthedeveloper-ecommerce.netlify.app/",
+    imageUrl: "img/ecommerce.jpg",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/stop-watch",
+    liveDemoUrl: "https://philipthedeveloper-ecommerce.netlify.app/",
+    stackUsed: ["React", "Firebase", "PayPal SandBox", "Netlify"],
   },
   {
     name: "A Stop Watch",
     description:
       "This Web Application can serves as a timer for you when you are carrying out a particular task.",
-    iconUrl: "img/stop-watch.jpg",
-    url: "https://github.com/philipthedeveloper/stop-watch",
-    test: "https://philipthedeveloper.github.io/stop-watch/",
+    imageUrl: "img/stop-watch.jpg",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/stop-watch",
+    liveDemoUrl: "https://philipthedeveloper.github.io/stop-watch/",
+    stackUsed: ["VS Code", "JavaScript"],
   },
   {
     name: "A Task Manager CRUD App",
-    description: "This App helps a user to manager their task.",
-    iconUrl: "img/task-manager.jpg",
-    url: "https://github.com/philipthedeveloper/task-manager",
-    test: "https://philipthedeveloper-taskmanager.netlify.app/",
+    // description: "This App helps a user to manager their task.",
+    description:
+      "CRUD task manager web application. Allows users to create, visualize, update and delete whatever activity want.",
+    imageUrl: "img/task-manager.jpg",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/task-manager",
+    liveDemoUrl: "https://philipthedeveloper-taskmanager.netlify.app/",
+    stackUsed: ["VS Code", "React", "Netlify"],
   },
   {
     name: "Basic Portfolio Website",
-    description: "An simple portfolio website made with react.",
-    iconUrl: "img/basic-portfolio.jpg",
-    url: "https://github.com/philipthedeveloper/basic-portfolio-page",
-    test: "https://philipthedeveloper-basic-portfolio.netlify.app/",
+    // description: "An simple portfolio website made with react.",
+    description:
+      "A dual theme photographer & ui/ux designer portfolio website. Crafted using ReactJS and styled components library.",
+    imageUrl: "img/basic-portfolio.jpg",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/basic-portfolio-page",
+    liveDemoUrl: "https://philipthedeveloper-basic-portfolio.netlify.app/",
+    stackUsed: ["VS Code", "React", "Styled Components"],
   },
 ];
 

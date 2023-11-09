@@ -8,9 +8,12 @@
   --main-background: #24282c;
   --base-color: #f8043d;
   --base-color-dimmed: rgb(246 4 60 / 30%);
+  --base-color-70: rgb(246 4 60 / 70%);
   --white: #e8f0e8;
   --shadow: #181d28;
   --black: #181a25;
+  --card-background: hsl(200, 9%, 13%);
+  --card-background-dimmed: rgba(27, 31, 34, 0.7);
   scroll-behavior: smooth !important;
 }
 

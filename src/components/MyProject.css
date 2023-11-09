@@ -19,8 +19,11 @@
   position: relative; */
   /* display: flex;
   gap: 1.5rem; */
-  display: flex;
-  flex-flow: row wrap;
+  /* display: flex;
+  flex-flow: row wrap; */
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project_thumbnail_container {
@@ -231,7 +234,7 @@ p#project_description {
 @media screen and (max-width: 420px) {
   #recent_works {
     font-weight: bold;
-    font-size: 2.3rem;
+    font-size: 1.9rem;
   }
 }
 @keyframes slide-down {
