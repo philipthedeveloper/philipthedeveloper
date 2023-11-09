@@ -53,9 +53,9 @@ function Header({ showModal, toggleButton }) {
           <li onClick={handleNavLink}>
             <a href="#projects">PROJECTS</a>
           </li>
-          <li onClick={handleNavLink}>
+          {/* <li onClick={handleNavLink}>
             <a href="#skills">SKILLS</a>
-          </li>
+          </li> */}
           <li onClick={handleNavLink}>
             <a href="#contact">CONTACT</a>
           </li>
