@@ -8,8 +8,8 @@ const Contact = ({ showProcessModal, hideProcess }) => {
   return (
     <div id="contact">
       <div className="header">
-        <p id="service">CONTACT</p>
-        <p id="what_i_do">Contact Me</p>
+        <p id="service">WHAT'S NEXT?</p>
+        <p id="what_i_do">Get In Touch</p>
       </div>
       <OverallCont>
         <ContactCardContainer className="contact-card-container">
