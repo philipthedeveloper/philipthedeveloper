@@ -13,7 +13,10 @@ const ExperienceCard = ({
       className={`w-full max-w-5xl ${
         index === 0 ? "bg-[var(--black)]" : "bg-[#a0001c]"
         // "bg-[var(--base-color-dimmed)]"
-      } p-8 rounded-3xl mx-auto`}
+      } p-8 rounded-3xl mx-auto story-card delay-200 translate-x-2 translate-y-20`}
+      style={{
+        transition: "transform 0.5s, opacity 0.7s ease",
+      }}
     >
       <div
         className="grid gap-4 sm:gap-8 lg:gap-12 employment-details-container"

@@ -11,7 +11,12 @@ const ProjectCard = ({
 }) => {
   const isOdd = index % 2 === 1;
   return (
-    <div className="grid grid-cols-12 gap-[10px] min-h-[400px] items-center">
+    <div
+      className="grid grid-cols-12 gap-[10px] min-h-[400px] items-center card opacity-0 translate-y-20 delay-200"
+      style={{
+        transition: "transform 0.5s, opacity 0.7s ease",
+      }}
+    >
       <div
         className={`${
           isOdd ? "md:col-start-6 md:col-end-13" : "md:col-start-1 md:col-end-8"

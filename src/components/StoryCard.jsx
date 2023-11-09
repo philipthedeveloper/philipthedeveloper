@@ -9,7 +9,7 @@ const StoryCard = ({ gridCol, gridRow, to, id, content, icon }) => {
         transition: "transform 0.5s, opacity 0.7s ease",
       }}
       id={id}
-      className="story-card opacity-0 translate-y-20 max-w-lg mx-auto md:max-w-none md:mx-0"
+      className="story-card opacity-0 translate-y-20 max-w-lg mx-auto md:max-w-none md:mx-0 delay-200"
     >
       <div className="flex gap-6">
         <a
