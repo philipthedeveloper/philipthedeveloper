@@ -20,7 +20,7 @@ const Footer = () => {
             <i className="fa-brands fa-github"></i>
           </a>
           <a
-            href="https://twitter.com/OwolabiPhilip2"
+            href="https://twitter.com/POwolabi55029"
             target={"_blank"}
             rel="noreferrer"
           >
