@@ -94,6 +94,7 @@ function Home() {
         draggable
         pauseOnHover
         theme="dark"
+        limit={1}
       />
       <Header showModal={showModal} toggleButton={setIsShowButton} />
       <IntroSection>

@@ -29,8 +29,9 @@ const ContactCard = ({ data }) => {
 
 const CardComp = styled.div`
   padding: 2rem;
-  background-color: var(--main-background);
-  box-shadow: 0px 0px 10px var(--black);
+  // background-color: var(--main-background);
+  background-color: var(--black);
+  // box-shadow: 0px 0px 10px var(--black);
   border-radius: 0.5rem;
   cursor: pointer;
   opacity: 0;

@@ -178,17 +178,18 @@ const Form = styled.form`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 60px 60px auto;
   gap: 1rem;
-  padding: 2rem;
+  // padding: 2rem;
   background-color: var(--main-background);
-  box-shadow: 0px 0px 10px var(--black);
+  // box-shadow: 0px 0px 10px var(--black);
   border-radius: 0.5rem;
 
   .form_group {
-    align-self: start;
+    // align-self: start;
 
     textarea {
       min-height: 200px;
       resize: none;
+      height: 100%;
     }
   }
 
@@ -198,12 +199,20 @@ const Form = styled.form`
     display: block;
     width: 100%;
     padding: 1rem;
-    border-radius: 0.5rem;
+    // border-radius: 0.5rem;
+    border-radius: 0.25rem;
     outline: none;
     border: none;
-    background-color: var(--shadow);
+    border-bottom: 1px solid var(--base-color);
+    // background-color: var(--shadow);
+    background-color: var(--black);
     color: #fff;
     font-family: inherit;
+  }
+
+  button {
+    background: var(--base-color);
+    transition: 0.4s ease;
   }
 
   .form_group:first-child,
@@ -231,7 +240,8 @@ const Form = styled.form`
   }
 
   button:hover {
-    background-color: var(--base-color);
+    // background-color: var(--base-color);
+    background-color: var(--black);
   }
 `;
 
