@@ -52,7 +52,8 @@ function IntroLeft() {
             <i className="fa-brands fa-twitter"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/owolabi-philip-50223821b/"
+            // href="https://www.linkedin.com/in/owolabi-philip-50223821b/"
+            href="https://www.linkedin.com/in/philip-owolabi-bb9b2929a/"
             target={"_blank"}
             rel="noreferrer"
           >
