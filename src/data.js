@@ -20,6 +20,24 @@ const services = [
 
 const projects = [
   {
+    name: "Codeverse",
+    description:
+      "An administrative portal for creating course and add e-book material for a mobile application name codeverse.",
+    imageUrl: "img/codeverse.png",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/codeverse_admin",
+    liveDemoUrl: "https://codeverse-admin.netlify.app/",
+    stackUsed: ["Vs Code", "React", "Firebase", "NodeJS"],
+  },
+  {
+    name: "Bonsai Price Page",
+    description:
+      "This project is a practice project that showcase a very intuitive pricing page for a company called Bonsai.",
+    imageUrl: "img/bonsai.png",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/3-Bonsai",
+    liveDemoUrl: "https://philipthedeveloper-bonsai.netlify.app/",
+    stackUsed: ["Vs Code", "React", "Netlify"],
+  },
+  {
     name: "Desktop Music Player",
     description:
       "A desktop music player that shows the core functionality or control of a music player",
