@@ -18,7 +18,8 @@ function IntroLeft() {
         </h2>
         <p id="intro_jobrole">
           {/* <span>Full Stack Web Developer</span> */}
-          <span>An innovative Frontend Developer</span>
+          {/* <span>An innovative Frontend Developer</span> */}
+          <span>A Software Developer</span>
         </p>
         <p id="intro_description">
           {/* <span>
