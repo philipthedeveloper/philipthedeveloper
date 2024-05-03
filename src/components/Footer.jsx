@@ -28,7 +28,8 @@ const Footer = () => {
           </a>
           <a
             // href="https://www.linkedin.com/in/owolabi-philip-50223821b/"
-            href="https://www.linkedin.com/in/philip-owolabi-bb9b2929a/"
+            // href="https://www.linkedin.com/in/philip-owolabi-bb9b2929a/"
+            href="https://www.linkedin.com/in/philipthedeveloper"
             target={"_blank"}
             rel="noreferrer"
           >
