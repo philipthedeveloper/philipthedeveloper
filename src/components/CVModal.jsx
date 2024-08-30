@@ -13,7 +13,8 @@ const CVModal = ({ hideModal }) => {
       <ModalBox>
         <a
           // href="docs/DEVELOPER_RESUME.pdf"
-          href="docs/resume.pdf"
+          // href="docs/resume.pdf"
+          href="docs/GOOGLE-RESUME-RUBIC.pdf"
           download={"philipthedeveloper"}
           style={{ ...styles.a, backgroundColor: "var(--base-color)" }}
         >
@@ -29,7 +30,8 @@ const CVModal = ({ hideModal }) => {
         </a> */}
 
         <a
-          href="docs/resume.docx"
+          // href="docs/resume.docx"
+          href="docs/GOOGLE-RESUME-RUBIC.docx"
           download={"philipthedeveloper"}
           style={{ ...styles.a, backgroundColor: "blue" }}
         >
