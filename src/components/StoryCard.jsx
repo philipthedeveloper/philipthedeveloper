@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 
 const StoryCard = ({ gridCol, gridRow, to, id, content, icon }) => {
   return (
@@ -11,9 +12,9 @@ const StoryCard = ({ gridCol, gridRow, to, id, content, icon }) => {
       id={id}
       className="story-card opacity-0 translate-y-20 max-w-lg mx-auto md:max-w-none md:mx-0 delay-200"
     >
-      <div className="flex gap-6">
+      <StoryCardGrid className="grid gap-6">
         <a
-          className="rounded-full w-[40px] md:w-[70px] h-[40px] md:h-[70px] aspect-square bg-[var(--base-color)] sm:flex justify-center items-center hidden "
+          className="rounded-full w-[40px] md:w-[70px] h-[40px] md:h-[70px] bg-[var(--base-color)] sm:flex justify-center items-center hidden flex-1"
           href={to}
         >
           {icon === "next" ? (
@@ -23,9 +24,17 @@ const StoryCard = ({ gridCol, gridRow, to, id, content, icon }) => {
           )}
         </a>
         <p className="leading-[180%] font-light text-sm">{content}</p>
-      </div>
+      </StoryCardGrid>
     </div>
   );
 };
+
+const StoryCardGrid = styled.div`
+  grid-template-columns: 40px 1fr;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 70px 1fr;
+  }
+`;
 
 export default StoryCard;
