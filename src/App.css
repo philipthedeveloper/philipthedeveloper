@@ -5,27 +5,39 @@
 }
 
 :root {
-  --main-background: #24282c;
-  --base-color: #f8043d;
-  --base-color-dimmed: rgb(246 4 60 / 30%);
-  --base-color-70: rgb(246 4 60 / 70%);
+  --main-background: #131313;
+  --base-color: #2ca4fb;
+  --base-color-dimmed: rgb(44 164 251 / 30%);
+  --base-color-70: rgb(44 164 251 / 70%);
   --white: #e8f0e8;
   --shadow: #181d28;
   --black: #181a25;
+  --gray-bg: #374151;
+  --transparent-gray: #374151c2;
+  --black-background: #131313;
   --card-background: hsl(200, 9%, 13%);
   --card-background-dimmed: rgba(27, 31, 34, 0.7);
   scroll-behavior: smooth !important;
+  --feedback-color: #e22808;
 }
 
 body {
   background-color: var(--main-background);
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Fira Code", sans-serif;
   /* font-family: "Rubik Puddles", cursive; */
   color: var(--white);
 }
 
+#root,
+body,
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* #root {
-  width: 90%;
+  width: 85%;;
   max-width: 1100px;
   margin: auto;
 } */

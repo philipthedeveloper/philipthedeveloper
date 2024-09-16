@@ -30,8 +30,12 @@ const StoryCard = ({ gridCol, gridRow, to, id, content, icon }) => {
 };
 
 const StoryCardGrid = styled.div`
-  grid-template-columns: 40px 1fr;
+  // grid-template-columns: 40px 1fr;
+  grid-template-columns: 1fr;
 
+  @media screen and (min-width: 640px) {
+    grid-template-columns: 40px 1fr;
+  }
   @media screen and (min-width: 768px) {
     grid-template-columns: 70px 1fr;
   }

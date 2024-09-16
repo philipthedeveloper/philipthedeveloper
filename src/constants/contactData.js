@@ -1,11 +1,11 @@
 const ContactData = [
   {
     logo: `fa-solid fa-location-dot`,
-    info: "N0 4, Melody Garden, Eruwa",
+    info: "Lagos, Nigeria",
   },
   {
     logo: `fa-solid fa-phone`,
-    info: "+2349072060752",
+    info: "+2348153026203",
   },
   {
     logo: "fa-solid fa-envelope",

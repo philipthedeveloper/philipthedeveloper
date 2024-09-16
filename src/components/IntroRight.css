@@ -14,7 +14,7 @@
   /* border-radius: 0.5rem; */
   border-radius: 2rem;
   position: relative;
-  width: 90%;
+  width: 85%;
   align-self: flex-end;
   display: flex;
   justify-content: center;
@@ -81,7 +81,7 @@
   }
 
   .background {
-    width: 90%;
+    width: 85%;
     height: auto;
     aspect-ratio: 1;
   }

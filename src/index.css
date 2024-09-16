@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.satisfy-regular {
+  font-family: "Satisfy", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .fade-in {
   animation: fadeIn 1.4s ease 2s 1 normal forwards;
 }
@@ -43,4 +49,14 @@
   .employment-details-container {
     grid-template-columns: 1fr !important;
   }
+}
+
+.fira-code {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.rubik {
+  font-family: "Rubik Wet Paint", cursive;
 }

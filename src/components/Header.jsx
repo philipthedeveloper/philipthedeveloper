@@ -1,15 +1,25 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import SideNav from "./redesign/SideNav";
+import classNames from "classnames";
 
 function Header({ showModal, toggleButton }) {
+  const [isSidenavOpen, setIsSidenavOpen] = useState(false);
+  const onOpen = () => {
+    toggleButton(true);
+    setIsSidenavOpen(true);
+  };
+
+  const onClose = () => {
+    toggleButton(false);
+    setIsSidenavOpen(false);
+  };
+
   const nav = useRef(null);
   const toggler = useRef(null);
   const handleToggle = () => {
     if (nav.current.classList.contains("show")) {
-      nav.current.classList.remove("show");
-      toggler.current.classList.remove("cross");
-      toggleButton(true);
       const scrollY = document.body.style.top;
       document.body.style.position = "";
       document.body.style.top = "";
@@ -17,9 +27,6 @@ function Header({ showModal, toggleButton }) {
     } else {
       document.body.style.position = "fixed";
       document.body.style.top = `-${window.scrollY}px`;
-      toggleButton(false);
-      nav.current.classList.add("show");
-      toggler.current.classList.add("cross");
     }
   };
 
@@ -31,14 +38,16 @@ function Header({ showModal, toggleButton }) {
   };
 
   return (
-    <header>
+    <header className="page-header">
       <div className="logo_container">
-        <Link to="/" id="home_link">
-          <span id="logo">W</span>
-          <p>philip</p>
+        <Link to="/" id="home_link" className="hidden lg:flex">
+          {/* <span id="logo">W</span> */}
+          <p className="satisfy-regular">philip</p>
         </Link>
       </div>
-      <nav ref={nav}>
+      <SideNav onClose={onClose} isOpen={isSidenavOpen} showModal={showModal} />
+
+      <nav ref={nav} className="hidden md:block main-nav">
         <ul>
           <li onClick={handleNavLink}>
             <Link to="/">HOME</Link>
@@ -53,23 +62,17 @@ function Header({ showModal, toggleButton }) {
           <li onClick={handleNavLink}>
             <a href="#projects">PROJECTS</a>
           </li>
-          {/* <li onClick={handleNavLink}>
-            <a href="#skills">SKILLS</a>
-          </li> */}
           <li onClick={handleNavLink}>
             <a href="#contact">CONTACT</a>
           </li>
-          {/* <li onClick={handleNavLink}>
-            <a href="#certification">CERTIFICATION</a>
-          </li> */}
         </ul>
       </nav>
       <button id="download_cv" onClick={showModal}>
         DOWNLOAD MY CV
       </button>
       <div
-        className="toggle-nav"
-        onClick={(e) => handleToggle(e)}
+        className={classNames("toggle-nav", { cross: isSidenavOpen })}
+        onClick={onOpen}
         ref={toggler}
       >
         <span className="a"></span>

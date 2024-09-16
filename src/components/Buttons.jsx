@@ -52,6 +52,10 @@ const Contact = styled.a`
   transform: scale(0.5);
   animation: scaling 1s ease 0s infinite alternate forwards;
 
+  @media screen and (max-width: 640px) {
+    top: 30%;
+  }
+
   &:hover {
     animation: none;
     transform: none;

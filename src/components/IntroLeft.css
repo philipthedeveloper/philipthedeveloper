@@ -36,7 +36,7 @@
 }
 
 #intro_jobrole {
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   font-weight: lighter;
 }
 
@@ -142,10 +142,10 @@
     font-size: 3.2rem;
   }
 
-  #intro_jobrole {
+  /* #intro_jobrole {
     font-size: 1.8rem;
     font-weight: lighter;
-  }
+  } */
 
   #intro_description {
     font-size: 0.75rem;
@@ -186,10 +186,10 @@
     font-size: 2.5rem;
   }
 
-  #intro_jobrole {
+  /* #intro_jobrole {
     font-size: 1.4rem;
     font-weight: lighter;
-  }
+  } */
 
   #intro_description {
     font-size: 0.75rem;
@@ -209,10 +209,10 @@
     font-size: 2rem;
   }
 
-  #intro_jobrole {
+  /* #intro_jobrole {
     font-size: 1.2rem;
     font-weight: lighter;
-  }
+  } */
 
   #intro_description {
     font-size: 0.75rem;

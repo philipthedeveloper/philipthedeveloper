@@ -65,35 +65,33 @@ const projects = [
     liveDemoUrl: "https://philipthedeveloper-ecommerce.netlify.app/",
     stackUsed: ["React", "Firebase", "PayPal SandBox", "Netlify"],
   },
-  {
-    name: "A Stop Watch",
-    description:
-      "This Web Application can serves as a timer for you when you are carrying out a particular task.",
-    imageUrl: "img/stop-watch.jpg",
-    sourceCodeUrl: "https://github.com/philipthedeveloper/stop-watch",
-    liveDemoUrl: "https://philipthedeveloper.github.io/stop-watch/",
-    stackUsed: ["VS Code", "JavaScript"],
-  },
-  {
-    name: "A Task Manager CRUD App",
-    // description: "This App helps a user to manager their task.",
-    description:
-      "CRUD task manager web application. Allows users to create, visualize, update and delete whatever activity want.",
-    imageUrl: "img/task-manager.jpg",
-    sourceCodeUrl: "https://github.com/philipthedeveloper/task-manager",
-    liveDemoUrl: "https://philipthedeveloper-taskmanager.netlify.app/",
-    stackUsed: ["VS Code", "React", "Netlify"],
-  },
-  {
-    name: "Basic Portfolio Website",
-    // description: "An simple portfolio website made with react.",
-    description:
-      "A dual theme photographer & ui/ux designer portfolio website. Crafted using ReactJS and styled components library.",
-    imageUrl: "img/basic-portfolio.jpg",
-    sourceCodeUrl: "https://github.com/philipthedeveloper/basic-portfolio-page",
-    liveDemoUrl: "https://philipthedeveloper-basic-portfolio.netlify.app/",
-    stackUsed: ["VS Code", "React", "Styled Components"],
-  },
+  // {
+  //   name: "A Stop Watch",
+  //   description:
+  //     "This Web Application can serves as a timer for you when you are carrying out a particular task.",
+  //   imageUrl: "img/stop-watch.jpg",
+  //   sourceCodeUrl: "https://github.com/philipthedeveloper/stop-watch",
+  //   liveDemoUrl: "https://philipthedeveloper.github.io/stop-watch/",
+  //   stackUsed: ["VS Code", "JavaScript"],
+  // },
+  // {
+  //   name: "A Task Manager CRUD App",
+  //   description:
+  //     "CRUD task manager web application. Allows users to create, visualize, update and delete whatever activity want.",
+  //   imageUrl: "img/task-manager.jpg",
+  //   sourceCodeUrl: "https://github.com/philipthedeveloper/task-manager",
+  //   liveDemoUrl: "https://philipthedeveloper-taskmanager.netlify.app/",
+  //   stackUsed: ["VS Code", "React", "Netlify"],
+  // },
+  // {
+  //   name: "Basic Portfolio Website",
+  //   description:
+  //     "A dual theme photographer & ui/ux designer portfolio website. Crafted using ReactJS and styled components library.",
+  //   imageUrl: "img/basic-portfolio.jpg",
+  //   sourceCodeUrl: "https://github.com/philipthedeveloper/basic-portfolio-page",
+  //   liveDemoUrl: "https://philipthedeveloper-basic-portfolio.netlify.app/",
+  //   stackUsed: ["VS Code", "React", "Styled Components"],
+  // },
 ];
 
 const certifications = [

@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div style={{ padding: "0rem 4rem 3rem", textAlign: "center" }}>
+    <div style={{ padding: "3rem 4rem 3rem", textAlign: "center" }}>
       <div className="logo_container">
         <Link to="/" id="home_link" style={{ justifyContent: "center" }}>
-          <span id="logo">W</span>
-          <p>philip</p>
+          <span className="text-xl sm:text-2xl md:text-3xl rubik text-[var(--base-color)]">
+            philipthedeveloper
+          </span>
+          {/* <p>philip</p> */}
         </Link>
       </div>
       <div className="connect">
@@ -46,9 +48,12 @@ const Footer = () => {
       </div>
 
       <p style={{ fontSize: "0.7rem", margin: "1rem 0" }}>
-        Designed and build by Philip Owolabi
+        Designed and build by{" "}
+        <b>
+          <i>Philip Owolabi</i>
+        </b>
       </p>
-      <p style={{ fontSize: "0.65rem", margin: "1rem 0" }}>
+      {/* <p style={{ fontSize: "0.65rem", margin: "1rem 0" }}>
         UI Credit:{" "}
         <a
           href="https://www.behance.net/PixelsMove"
@@ -58,10 +63,10 @@ const Footer = () => {
         >
           https://www.behance.net/PixelsMove
         </a>
-      </p>
-      <p style={{ fontSize: "0.65rem" }}>
+      </p> */}
+      {/* <p style={{ fontSize: "0.65rem" }}>
         philipthedeveloper &copy; All Right Reserved.
-      </p>
+      </p> */}
     </div>
   );
 };

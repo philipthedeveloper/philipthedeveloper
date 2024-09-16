@@ -20,13 +20,13 @@ function MyProject() {
   }, []);
 
   return (
-    <div id="projects">
+    <div>
       <div className="project_header">
         <p id="recent_works">
           Some Things I've <span>built</span>
         </p>
       </div>
-      <div className="my-16 flex flex-col gap-24 max-w-5xl mx-auto">
+      <div className="my-16 flex flex-col gap-24 max-w-5xl w-full md:w-[90%] mx-auto">
         {projects.map((project, i) => (
           <ProjectCard {...project} index={i} />
         ))}

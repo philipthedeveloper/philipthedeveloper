@@ -6,14 +6,15 @@ const ExperienceCard = ({
   position,
   companyName,
   workDone,
+  techStack,
   index,
 }) => {
   return (
     <div
       className={`w-full max-w-5xl ${
-        index === 0 ? "bg-[var(--black)]" : "bg-[#a0001c]"
+        index === 0 ? "bg-[var(--black)]" : "bg-[hsl(205,87%,30%)]"
         // "bg-[var(--base-color-dimmed)]"
-      } p-8 rounded-3xl mx-auto story-card delay-200 translate-x-2 translate-y-20`}
+      }  p-5 sm:p-8 rounded-3xl mx-auto story-card delay-200 translate-x-2 translate-y-20`}
       style={{
         transition: "transform 0.5s, opacity 0.7s ease",
       }}
@@ -42,9 +43,20 @@ const ExperienceCard = ({
           </p>
           <ul className="flex flex-col gap-4 list-disc mt-2 ml-3">
             {workDone.map((work) => (
-              <li className="text-xs max-w-xl leading-5 pr-0 pl-4">{work}</li>
+              <li className="text-xs max-w-xl leading-6 sm:leading-5 pr-0 pl-4">
+                {work}
+              </li>
             ))}
           </ul>
+          <p className="mt-2 sm:mt-1">
+            <span className="italic font-semibold text-sm">Tech Stack: </span>
+            {techStack.map((stack, i) => (
+              <span className="italic text-xs font-medium">
+                {i !== 0 && ", "}
+                {stack}
+              </span>
+            ))}
+          </p>
         </div>
       </div>
     </div>

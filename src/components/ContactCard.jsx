@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 const ContactCard = ({ data }) => {
   const { logo, info } = data;
   return (
@@ -29,15 +28,13 @@ const ContactCard = ({ data }) => {
 
 const CardComp = styled.div`
   padding: 2rem;
-  // background-color: var(--main-background);
-  background-color: var(--black);
-  // box-shadow: 0px 0px 10px var(--black);
+  // background-color: var(--black);
+  background-color: #101010;
+  border: 1px solid #1c1c1c;
   border-radius: 0.5rem;
   cursor: pointer;
   opacity: 0;
-  // transform: scale(0.7);
   transform: scale(0.9);
-  // transition: transform 1s, opacity 1s ease;
   transition: transform 0.4s, opacity 0.7s ease;
   min-width: 250px;
   text-align: center;

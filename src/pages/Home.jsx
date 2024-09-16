@@ -4,19 +4,18 @@ import IntroLeft from "../components/IntroLeft";
 import IntroRight from "../components/IntroRight";
 import MyService from "../components/MyService";
 import MyProject from "../components/MyProject";
-import Certification from "../components/Certification";
 import styled from "styled-components";
 import CVModal from "../components/CVModal";
 import ProcessingModal from "../components/ProcessModal";
-import Skills from "../components/Skills";
 import Contact from "../components/Contact";
 import { BackToTop, ContactMe } from "../components/Buttons";
 import { useEffect } from "react";
 import Footer from "../components/Footer";
-import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer } from "react-toastify";
 import MyJourney from "../components/MyJourney";
 import Experience from "../components/experience/Experience";
+import HeroUnderLay from "../components/HeroUnderLay";
+import NewIntroSection from "../components/redesign/NewIntroSection";
+import Social from "../components/redesign/Social";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(() => false);
@@ -83,34 +82,24 @@ function Home() {
       {isProcess && <ProcessingModal hideModal={hideProcess} />}
       {isScrolled && <BackToTop />}
       {isButtonShow && <ContactMe />}
-      <ToastContainer
-        position="top-right"
-        autoClose={1500}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-        limit={1}
-      />
+      <HeroUnderLay />
       <Header showModal={showModal} toggleButton={setIsShowButton} />
-      <IntroSection>
+      <Social />
+      {/* <IntroSection>
         <IntroLeft />
         <IntroRight />
-      </IntroSection>
-      <Section>
+      </IntroSection> */}
+      <NewIntroSection />
+      <Section id="journey">
         <MyJourney />
       </Section>
-      <Section>
+      <Section id="work-experience">
         <Experience />
       </Section>
       {/* <Section>
         <MyService />
       </Section> */}
-      <Section>
+      <Section id="projects">
         <MyProject />
       </Section>
       {/* <Section>
@@ -131,50 +120,57 @@ function Home() {
 }
 
 const Section = styled.section`
-  margin: 5rem auto;
-  padding-bottom: 5rem;
+  // margin: 5rem auto;
+  // padding-bottom: 5rem;
+  padding: 5rem 0;
+  margin: 0rem auto;
   border-bottom: 2px solid var(--black);
-  width: 90%;
+  width: 85%;
   max-width: 1100px;
+
+  @media screen and (max-width: 400px) {
+    width: 90%;
+  }
 `;
 
 const IntroSection = styled(Section)`
   display: flex;
   flex-wrap: wrap;
+  min-height: 90dvh;
 `;
 // const ServiceSection = styled.section`
 //   margin: 5rem auto;
 //   padding-bottom: 5rem;
 //   border-bottom: 2px solid var(--black);
-//   width: 90%;
+//   width: 85%;;
 //   max-width: 1100px;
 // `;
 // const ProjectSection = styled.section`
 //   margin: 5rem auto;
 //   padding-bottom: 5rem;
 //   border-bottom: 2px solid var(--black);
-//   width: 90%;
+//   width: 85%;;
 //   max-width: 1100px;
 // `;
 // const SkillSection = styled.section`
 //   margin: 5rem auto;
 //   padding-bottom: 5rem;
 //   border-bottom: 2px solid var(--black);
-//   width: 90%;
+//   width: 85%;;
 //   max-width: 1100px;
 // `;
 // const ContactSection = styled.section`
 //   margin: 5rem auto;
 //   padding-bottom: 5rem;
 //   border-bottom: 2px solid var(--black);
-//   width: 90%;
+//   width: 85%;;
 //   max-width: 1100px;
 // `;
 // const CertificationSection = styled.section`
 //   margin: 5rem auto;
 //   padding-bottom: 5rem;
 //   border-bottom: 2px solid var(--black);
-//   width: 90%;
+//   width: 85%;;
 //   max-width: 1100px;
 // `;
 
