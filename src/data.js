@@ -30,6 +30,15 @@ const projects = [
     stackUsed: ["React Native", "NodeJS"],
   },
   {
+    name: "Acorn Auto",
+    description:
+      "Developed the Acorn Tire & Auto website, during which I functioned as the fullstack development engineer.",
+    imageUrl: "",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/acorn-auto",
+    liveDemoUrl: "https://www.acornauto.com/",
+    stackUsed: ["React", "NodeJS", "MongoDB"],
+  },
+  {
     name: "Songify",
     description:
       "A desktop music player offering all the essential functionalities of a modern music player with an intuitive user interface.",
