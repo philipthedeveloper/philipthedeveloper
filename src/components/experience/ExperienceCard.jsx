@@ -15,7 +15,7 @@ const ExperienceCard = ({
       className={`w-full max-w-5xl ${
         // index === 0 ? "bg-[var(--black)]" : "bg-[hsl(205,87%,30%)]"
         index === 0 ? "bg-[#0d0d0d]" : "bg-[hsl(205,87%,30%)]"
-      }  p-5 sm:p-8 rounded-3xl mx-auto story-card delay-200 translate-x-2 translate-y-20 relative overflow-hidden`}
+      }  p-5 sm:p-8 rounded-lg mx-auto story-card delay-200 translate-x-2 translate-y-20 relative overflow-hidden`}
       style={{
         transition: "transform 0.5s, opacity 0.7s ease",
       }}
