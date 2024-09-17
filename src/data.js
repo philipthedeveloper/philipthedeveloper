@@ -41,7 +41,7 @@ const projects = [
   {
     name: "Streaks",
     description:
-      "An admin system for creating mutliple choice questionaire. Try out: email *test@gmail.com* and password: *Test@123*.",
+      "An admin system for creating mutliple choice questionaire. Requires auth access, so please reach out if you need to test.",
     imageUrl: "",
     sourceCodeUrl: "https://github.com/philipthedeveloper/streaks-admin",
     liveDemoUrl: "https://admin-streaks-portal.netlify.app/",
@@ -65,15 +65,15 @@ const projects = [
     liveDemoUrl: "#",
     stackUsed: ["AWS S3", "AWS Lambda", "NodeJS"],
   },
-  {
-    name: "Codeverse",
-    description:
-      "An admin portal designed for creating courses and adding e-book materials, developed for the Codeverse mobile application.",
-    imageUrl: "img/codeverse.png",
-    sourceCodeUrl: "https://github.com/philipthedeveloper/codeverse_admin",
-    liveDemoUrl: "https://codeverse-admin.netlify.app/",
-    stackUsed: ["React", "Firebase", "NodeJS"],
-  },
+  // {
+  //   name: "Codeverse",
+  //   description:
+  //     "An admin portal designed for creating courses and adding e-book materials, developed for the Codeverse mobile application.",
+  //   imageUrl: "img/codeverse.png",
+  //   sourceCodeUrl: "https://github.com/philipthedeveloper/codeverse_admin",
+  //   liveDemoUrl: "https://codeverse-admin.netlify.app/",
+  //   stackUsed: ["React", "Firebase", "NodeJS"],
+  // },
   {
     name: "Bonsai Price Page",
     description:
