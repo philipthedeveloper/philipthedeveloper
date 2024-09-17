@@ -39,6 +39,15 @@ const projects = [
     stackUsed: ["React", "NodeJS", "MongoDB"],
   },
   {
+    name: "Streaks",
+    description:
+      "An admin system for creating mutliple choice questionaire. Try out: email *test@gmail.com* and password: *Test@123*.",
+    imageUrl: "",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/streaks-admin",
+    liveDemoUrl: "https://admin-streaks-portal.netlify.app/",
+    stackUsed: ["React", "NodeJS", "MongoDB"],
+  },
+  {
     name: "Songify",
     description:
       "A desktop music player offering all the essential functionalities of a modern music player with an intuitive user interface.",
