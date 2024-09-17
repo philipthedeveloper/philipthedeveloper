@@ -22,11 +22,12 @@ function MyProject() {
   return (
     <div>
       <div className="project_header">
+        <p className="text-[var(--base-color)] text-center">PROJECTS</p>
         <p id="recent_works">
           Some Things I've <span>built</span>
         </p>
       </div>
-      <div className="my-16 flex flex-col gap-24 max-w-5xl w-full md:w-[90%] mx-auto">
+      <div className="my-16 flex flex-col md:grid grid-cols-2 gap-6 md:gap-8 max-w-5xl w-full md:w-[90%] mx-auto">
         {projects.map((project, i) => (
           <ProjectCard {...project} index={i} />
         ))}

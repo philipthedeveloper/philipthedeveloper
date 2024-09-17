@@ -6,12 +6,12 @@ import ContactForm from "./ContactForm";
 
 const Contact = ({ showProcessModal, hideProcess }) => {
   return (
-    <div id="contact">
+    <div>
       <div className="header">
         <p id="service">WHAT'S NEXT?</p>
         <p id="what_i_do">Get In Touch</p>
       </div>
-      <OverallCont>
+      <OverallCont className="w-full md:w-[90%] mx-auto">
         <ContactCardContainer className="contact-card-container">
           {ContactData.map((item, i) => (
             <ContactCard data={item} key={i.toString()} />

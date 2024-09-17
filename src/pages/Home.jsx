@@ -16,6 +16,7 @@ import Experience from "../components/experience/Experience";
 import HeroUnderLay from "../components/HeroUnderLay";
 import NewIntroSection from "../components/redesign/NewIntroSection";
 import Social from "../components/redesign/Social";
+import noiseBg from "../assets/imgs/noise-bg.png";
 
 function Home() {
   const [isModalOpen, setIsModalOpen] = useState(() => false);
@@ -78,6 +79,10 @@ function Home() {
 
   return (
     <>
+      <div
+        className="w-full h-full absolute z-0 opacity-[0.013] top-0 left-0"
+        style={{ background: `url(${noiseBg})` }}
+      ></div>
       {isModalOpen && <CVModal hideModal={hideModal} />}
       {isProcess && <ProcessingModal hideModal={hideProcess} />}
       {isScrolled && <BackToTop />}
@@ -105,7 +110,7 @@ function Home() {
       {/* <Section>
         <Skills />
       </Section> */}
-      <Section>
+      <Section id="contact">
         <Contact
           showProcessModal={showProcessModal}
           hideProcess={hideProcess}

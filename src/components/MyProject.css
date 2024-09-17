@@ -128,14 +128,14 @@ p#project_description {
   border-radius: 0.4rem;
   text-align: center;
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--base-color);
   text-decoration: none;
   font-size: 0.85rem;
   transition: 0.4s ease;
 }
 
 #view_all_works:hover {
-  background-color: var(--base-color);
+  background-color: #0d0d0d;
 }
 
 .fa-arrow-right {
@@ -158,7 +158,7 @@ p#project_description {
   margin: 0rem 1rem;
   padding: 1rem 1.5rem;
   cursor: pointer;
-  background-image: url("../assets/img/Asset2.svg");
+  background-image: url("../assets/imgs/Asset2.svg");
   background-repeat: no-repeat;
   transition: 0.4s ease;
 }

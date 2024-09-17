@@ -1,5 +1,5 @@
 import React from "react";
-import downArrow from "../../assets/img/down-arrow.svg";
+import downArrow from "../../assets/imgs/down-arrow.svg";
 import styled from "styled-components";
 
 const NewIntroSection = () => {

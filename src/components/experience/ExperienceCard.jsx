@@ -1,4 +1,5 @@
 import React from "react";
+import noiseBg from "../../assets/imgs/noise-bg.png";
 
 const ExperienceCard = ({
   startDate,
@@ -12,13 +13,17 @@ const ExperienceCard = ({
   return (
     <div
       className={`w-full max-w-5xl ${
-        index === 0 ? "bg-[var(--black)]" : "bg-[hsl(205,87%,30%)]"
-        // "bg-[var(--base-color-dimmed)]"
-      }  p-5 sm:p-8 rounded-3xl mx-auto story-card delay-200 translate-x-2 translate-y-20`}
+        // index === 0 ? "bg-[var(--black)]" : "bg-[hsl(205,87%,30%)]"
+        index === 0 ? "bg-[#0d0d0d]" : "bg-[hsl(205,87%,30%)]"
+      }  p-5 sm:p-8 rounded-3xl mx-auto story-card delay-200 translate-x-2 translate-y-20 relative overflow-hidden`}
       style={{
         transition: "transform 0.5s, opacity 0.7s ease",
       }}
     >
+      <div
+        className="w-full h-full absolute z-0 opacity-[0.018] top-0 left-0"
+        style={{ background: `url(${noiseBg})` }}
+      ></div>
       <div
         className="grid gap-4 sm:gap-8 lg:gap-12 employment-details-container"
         style={{ gridTemplateColumns: "minmax(max-content, 220px) 1fr" }}
