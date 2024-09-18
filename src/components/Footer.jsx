@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div style={{ padding: "3rem 4rem 3rem", textAlign: "center" }}>
+    <div
+      style={{ padding: "3rem 4rem 3rem", textAlign: "center" }}
+      className="relative z-30"
+    >
       <div className="logo_container">
         <Link to="/" id="home_link" style={{ justifyContent: "center" }}>
           <span className="text-xl sm:text-2xl md:text-3xl rubik text-[var(--base-color)]">
