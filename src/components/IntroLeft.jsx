@@ -46,7 +46,7 @@ function IntroLeft() {
             <i className="fa-brands fa-github"></i>
           </a>
           <a
-            href="https://twitter.com/POwolabi55029"
+            href="https://x.com/OwolabiPhilip2"
             target={"_blank"}
             rel="noreferrer"
           >

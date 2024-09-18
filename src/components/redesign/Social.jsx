@@ -14,7 +14,7 @@ const Social = () => {
           <i className="fa-brands text-2xl md:text-3xl fa-github"></i>
         </SocialLink>
         <SocialLink
-          href="https://twitter.com/POwolabi55029"
+          href="https://x.com/OwolabiPhilip2"
           target={"_blank"}
           rel="noreferrer"
         >
