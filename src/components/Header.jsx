@@ -38,7 +38,7 @@ function Header({ showModal, toggleButton }) {
   };
 
   return (
-    <header className="page-header">
+    <header className="page-header relative z-30">
       <div className="logo_container">
         <Link to="/" id="home_link" className="hidden lg:flex">
           {/* <span id="logo">W</span> */}
