@@ -39,6 +39,15 @@ const projects = [
     stackUsed: ["React", "NodeJS", "MongoDB"],
   },
   {
+    name: "Tunik Engineering",
+    description:
+      "Developed the Tunik Engineering Official Website, during which I functioned as the fullstack development engineer.",
+    imageUrl: "",
+    sourceCodeUrl: "https://github.com/philipthedeveloper/tunik-engineering",
+    liveDemoUrl: "https://philipthedeveloper.github.io/tunik-engineering/",
+    stackUsed: ["JavaScript", "CSS3"],
+  },
+  {
     name: "Streaks",
     description:
       "An admin system for creating mutliple choice questionaire. Requires auth access, so please reach out if you need to test.",
