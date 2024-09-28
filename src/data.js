@@ -30,6 +30,15 @@ const projects = [
     stackUsed: ["React Native", "NodeJS"],
   },
   {
+    name: "Adutem Innovations",
+    description:
+      "Developed a digital marketing agency website, during which I functioned as the fullstack development engineer.",
+    imageUrl: "",
+    sourceCodeUrl: "https://github.com/Adutem/Adutem-Innovation/tree/develop",
+    liveDemoUrl: "https://adutem-innovation.onrender.com/",
+    stackUsed: ["React", "NodeJS", "MongoDB"],
+  },
+  {
     name: "Acorn Auto",
     description:
       "Developed the Acorn Tire & Auto website, during which I functioned as the fullstack development engineer.",
