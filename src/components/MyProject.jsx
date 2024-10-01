@@ -20,7 +20,7 @@ function MyProject() {
   }, []);
 
   return (
-    <div>
+    <div className="relative z-10">
       <div className="project_header">
         <p className="text-[var(--base-color)] text-center">PROJECTS</p>
         <p id="recent_works">
