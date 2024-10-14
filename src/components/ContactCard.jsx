@@ -19,9 +19,20 @@ const ContactCard = ({ data }) => {
           fontSize: "1.5rem",
         }}
       ></i>
-      <p id="service_desc" style={{ marginTop: "0.5rem" }}>
-        {info}
-      </p>
+      {data?.linkTo ? (
+        <a
+          href={data.linkTo}
+          id="service_desc"
+          target={data?.linkTo.startsWith("http") ? "_blank" : "_self"}
+          className="block mt-2"
+        >
+          {info}
+        </a>
+      ) : (
+        <p id="service_desc" style={{ marginTop: "0.5rem" }}>
+          {info}
+        </p>
+      )}
     </CardComp>
   );
 };
